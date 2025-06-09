@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physics"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- Search Bar -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:radius="12dp"
+        app:cardElevation="2dp">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search AR learning topics..."
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Scrollable Grid -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Example Card -->
+            <!-- Repeat this block with different content for each topic -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:radius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_megnet"
+                        android:layout_gravity="start" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Megnatic Field"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+
+                   <!-- <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5/8 models"
+                        android:textColor="#888888"
+                        android:textSize="13sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Science"
+                        android:textColor="#A58CFF"
+                        android:textSize="12sp"
+                        android:background="@drawable/category_tag"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#EFEAFF"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:radius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_electromegnet"
+                        android:layout_gravity="start" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electromegnatic Field"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+
+                    <!-- <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="5/8 models"
+                         android:textColor="#888888"
+                         android:textSize="13sp"
+                         android:layout_marginTop="4dp"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Science"
+                         android:textColor="#A58CFF"
+                         android:textSize="12sp"
+                         android:background="@drawable/category_tag"
+                         android:paddingHorizontal="8dp"
+                         android:paddingVertical="4dp"
+                         android:layout_marginTop="4dp"
+                         android:backgroundTint="#EFEAFF"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Copy and paste the above CardView for other topics, changing icon/text -->
+
+        </GridLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />-->
+
+</LinearLayout>

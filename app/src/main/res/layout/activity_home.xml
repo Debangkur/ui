@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_graduation_cap"
+                android:contentDescription="Graduation Cap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARVidya"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+        <!-- Welcome Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_avatar"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:text="Welcome back!"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Debangkur Baruah"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Student"
+                    android:textSize="12sp"
+                    android:textColor="#999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Launch AR -->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_gradient"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Launch AR Experience"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover learning in 3D"
+                android:textColor="#EEEEEE"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Feature Buttons -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="20dp"
+            android:rowCount="2"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Subjects -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="#FEEBEB"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:src="@drawable/ic_book"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subjects"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Take a Quiz -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="#E5F4FB"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:src="@drawable/ic_quiz"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take a Quiz"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Progress -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="#E7F7E4"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:src="@drawable/ic_profile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Achievements -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:background="#FFF0D6"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:src="@drawable/ic_download"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:text="Downloads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Recent Activities -->
+       <!-- <TextView
+            android:text="Recent Activities"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="space_between">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_biology"/>
+
+                <TextView android:text="Biology AR Lesson" android:textStyle="bold" android:textSize="14sp" />
+                <TextView android:text="2 hours ago" android:textSize="12sp" android:textColor="#888888" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_math"/>
+
+                <TextView android:text="Math Quiz"
+                 android:textStyle="bold"
+                 android:textSize="14sp" />
+                <TextView
+                android:text="Yesterday"
+                android:textSize="12sp"
+                android:textColor="#888888" />
+            </LinearLayout>
+        </LinearLayout>
+-->
+    </LinearLayout>
+</ScrollView>
