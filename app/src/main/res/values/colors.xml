@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+        <color name="purple_700">#3700B3</color>
+        <color name="light_purple">#E0BBE4</color> <!-- example value -->
+        <color name="blue_700">#1976D2</color>
+        <color name="light_blue">#BBDEFB</color>
+
 </resources>

@@ -1,4 +1,5 @@
-package com.example.arapp
+ package com.example.homepage
+
 
 import android.os.Bundle
 import android.view.Gravity
@@ -28,14 +29,8 @@ class TopicActivity : AppCompatActivity() {
         gridLayout = findViewById(R.id.gridLayout)
 
         val topics = listOf(
-            Topic("Solar System", "5/8 models", "Science", R.drawable.ic_solar, R.color.purple_700, R.color.light_purple),
-            Topic("Human Anatomy", "2/6 models", "Biology", R.drawable.ic_anatomy, R.color.blue_700, R.color.light_blue),
-            Topic("Ancient Egypt", "1/4 models", "History", R.drawable.ic_egypt, R.color.orange_700, R.color.light_orange),
-            Topic("Chemistry Lab", "0/5 models", "Science", R.drawable.ic_chemistry, R.color.green_700, R.color.light_green),
-            Topic("DNA Structure", "3/6 models", "Biology", R.drawable.ic_dna, R.color.purple_700, R.color.light_purple),
-            Topic("Quantum Physics", "2/7 models", "Science", R.drawable.ic_quantum, R.color.blue_700, R.color.light_blue),
-            Topic("World Geography", "4/8 models", "Geography", R.drawable.ic_geo, R.color.orange_700, R.color.light_orange),
-            Topic("Microbiology", "1/5 models", "Biology", R.drawable.ic_micro, R.color.teal_700, R.color.light_teal)
+            Topic("Megnatic Field", "5/8 models", "Science", R.drawable.ic_megnet, R.color.purple_700, R.color.light_purple),
+            Topic("Elctromegnatic Field", "2/6 models", "Biology", R.drawable.ic_electromegnet, R.color.blue_700, R.color.light_blue),
         )
 
         for (topic in topics) {

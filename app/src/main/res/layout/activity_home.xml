@@ -171,13 +171,13 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:src="@drawable/ic_profile"
+                    android:src="@drawable/ic_score"
                     android:layout_width="24dp"
                     android:layout_height="24dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Profile"
+                    android:text="Quiz Score"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
